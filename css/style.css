@@ -1,0 +1,98 @@
+body {
+	width: 900px;
+	height: 1000px;
+	position: relative;
+	background: -webkit-radial-gradient(450px 500px, circle, #B8860B, #000);
+	font-family: Karla, sans-serif;
+}
+
+section {
+	background: #FFF;
+	opacity: .7;
+	width: 900px;
+	border-radius: 25px 25px;
+	padding: 20px;
+	box-shadow: 5px 5px 5px #FFF;
+}
+
+header {
+	margin: 25px;
+	padding: 5px;
+}
+
+header h1 {
+	font-size: 4em;
+	display: inline-block;
+}
+
+header img {
+	display: inline-block;
+	margin: 10px;
+	position: relative;
+	top: 50px;
+}
+
+form {
+	margin-bottom: 50px;
+	border: 1px solid;
+	padding: 25px;
+	border-radius: 20px 20px;
+}
+
+form:hover {
+	border: 2px solid;
+}
+
+input {
+	width: 80px;
+	margin-right: 10px;
+	border-radius: 5px 5px;
+	font-family: Karla, sans-serif;
+	font-size: 18px;
+}
+
+input:nth-child(n+3) {
+	width: 160px;
+}
+
+textarea {
+	display: block;
+	margin-top: 25px;
+	border-radius: 10px 10px;
+	width: 600px;
+	height: 200px;
+	position: relative;
+	left: 120px;
+	font-family: Karla, sans-serif;
+	font-size: 18px;
+}
+
+input:focus {
+	outline: 0;
+	box-shadow: 5px 5px 5px #B8860B;
+	border: 2px solid;
+}
+
+textarea:focus {
+	outline: 0;
+	box-shadow: 5px 5px 5px #B8860B;
+	border: 2px solid;
+}
+
+form > p {
+	position: relative;
+	left: 220px;
+}
+
+input[type='submit'] {
+	margin-top: 50px;
+	position: relative;
+	left: 320px;
+	box-shadow: 5px 5px 5px #B8860B;
+	border: 2px solid;
+}
+
+input[type='submit']:hover {
+	box-shadow: none;
+	border: 1px solid;
+}
