@@ -11,47 +11,26 @@
 
 <form method="post">
 	<label for='first_name'>First Name</label><br>
-	<input class="single_input" id='first_name' type='text' name='first_name'><br>
+	<input class="single_input required" id='first_name' type='text' name='first_name'><br>
+	<span>This field is required.</span><br>
 	<label for='last_name'>Last Name</label><br>
-	<input class="single_input" id='last_name' type='text' name='last_name'><br>
+	<input class="single_input required" id='last_name' type='text' name='last_name'><br>
+	<span>This field is required.</span><br>
 	<label for='location'>Location</label><br>
-	<input class="single_input" id='location' type='text' name='location' placeholder='City, State'><br>
+	<input class="single_input required" id='location' type='text' name='location' placeholder='City, State'><br>
+	<span>This field is required.</span><br>
 	<label for='email'>Email</label><br>
-	<input class="single_input" id='email' type='email' name='email'><br>
+	<input class="single_input required" id='email' type='email' name='email'><br>
+	<span>This field is required.</span><br>
 	<label for='formtext'>Message</label><br>
-	<textarea id='formtext' name='interest' maxlength="150"></textarea><br>
-	<div id="formtext-error"></div><br>
+	<textarea id='formtext' class="required" name='message' maxlength="250"></textarea><br>
+	<span>This field is required.</span><br>
+	<div id="formtext-error"></div>
 	<input type="checkbox" name="subscribe" id="subscribe">
 	<label for="subscribe">Subscribe to our monthly newsletter</label><br>
 	<div>to be in the know on the latest Morano Gelato news!</div><br>
 	<input type='submit'>
 </form>
 
-<script type="text/javascript">
-	// form validations 
-
-	$('#formtext').keyup(function(){
-
-	    // with every keyup the value of the text field is captured 
-	    // other keyboard listeners - keydown, keypress 
-	    // keydown fires before the new letter is captured 
-
-	    var value = $(this).val();
-	    
-	    var how_many_characters = value.length;
-
-	    var how_many_left = 150 - how_many_characters;
-
-	    $('#formtext-error').html('You have ' + how_many_left + ' characters left.')
-
-	    if (how_many_left == 0) {
-	        $('#formtext-error').css('color','red');
-	    } else if (how_many_left < 25) {
-	        $('#formtext-error').css('color','orange');
-	    } else {
-	        $('#formtext-error').css('color','#FFF');
-	    }
-
-	});
-
-</script>
+<script type="text/javascript" src="js/validEmail.js"></script>
+<script type="text/javascript" src="js/content.js"> </script>

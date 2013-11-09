@@ -39,11 +39,11 @@
 			<p>&copy; <?php echo date('Y');?> Morano Gelato Inc.</p>
 			<p>PO Box 5647 Hanover, NH 03755 :: 347.210.4933 :: moranogelato@gmail.com</p>
 			<nav>
-				<a href="#">FB</a>
-				<a href="#">Twitter</a>
-				<a href="#">Instagram</a>
+				<a href="https://www.facebook.com/moranogelatoinc?ref=br_tf">FB</a>
+				<a href="https://twitter.com/MoranoGelato">Twitter</a>
+				<a href="http://instagram.com/">Instagram</a> <!-- need to fix this link-->
 			</nav>
-			<p id="self-credit">A Jordan Paul Morano Design Project</p>
+			<p><a id="self-credit" href="http://jordanmorano.biz">A Jordan Paul Morano Design Project</a></p>
 		</footer>
 	</div>
 

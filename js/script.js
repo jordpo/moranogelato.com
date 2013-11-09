@@ -49,5 +49,5 @@ $('#top_img').on('click', function(e){
     		$('#content').html(response);
     	}
     })
-    $('#img').css('height','300px');
+    $('#img').css('height','400px');
 });
