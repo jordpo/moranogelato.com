@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Morano Gelato Inc</title>
+	<title>Morano Gelato</title>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -9,19 +9,19 @@
 	<div id="wrapper">
 		<header class="top">
 			<img id="top_img" src="img/logo.jpg">
-			<h1>Morano Gelato Inc</h1>
+			<h1>Morano Gelato</h1>
 		</header>
 		<nav class="top">
-			<li id="about">About</li>
-			<li id="products">Products</li>
-			<li id="press">Press</li>
-			<li id="contact">Contact</li>
+			<a id="about" href="#internallink">About</a>
+			<a id="press" href="#content">Press</a>
+			<a id="contact" href="#content">Contact</a>
 		</nav>
 		<div id="slide_parent">
 			<div id="slideshow">
 				<div id="img"></div>
 			</div>
 		</div>
+		<a name="internallink"></a>
 		<section id="content">
 			<article>
 				<header>
@@ -34,7 +34,6 @@
 				</ul>
 			</article>
 		</section>
-
 		<footer>
 			<p>&copy; <?php echo date('Y');?> Morano Gelato Inc.</p>
 			<p>PO Box 5647 Hanover, NH 03755 :: 347.210.4933 :: moranogelato@gmail.com</p>
