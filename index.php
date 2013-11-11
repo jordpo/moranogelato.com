@@ -11,16 +11,19 @@
 			<img id="top_img" src="img/logo.jpg">
 			<h1>Morano Gelato</h1>
 		</header>
+		<div class="bg_div"></div>
 		<nav class="top">
 			<a id="about" href="#internallink">About</a>
 			<a id="press" href="#content">Press</a>
 			<a id="contact" href="#content">Contact</a>
 		</nav>
+		<div class="bg_div"></div>
 		<div id="slide_parent">
 			<div id="slideshow">
 				<div id="img"></div>
 			</div>
 		</div>
+		<div class="bg_div"></div>
 		<a name="internallink"></a>
 		<section id="content">
 			<article>
@@ -34,6 +37,7 @@
 				</ul>
 			</article>
 		</section>
+		<div class="bg_div"></div>
 		<footer>
 			<p>&copy; <?php echo date('Y');?> Morano Gelato Inc.</p>
 			<p>PO Box 5647 Hanover, NH 03755 :: 347.210.4933 :: moranogelato@gmail.com</p>
