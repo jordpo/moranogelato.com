@@ -25,6 +25,9 @@ header {
 	margin-left: 31%;
 	padding-bottom: 10px;
 	background-color: #000;
+}
+
+#top {
 	border: 4px solid #FFF;
 }
 
@@ -39,20 +42,10 @@ header {
 	cursor: pointer;
 }
 
-.top a {
-	transition: text-shadow .8s ease-in-out;
-}
-
-.top a:hover {
-	text-shadow: 4px 4px 4px #FFD700;
-	cursor: pointer;
-}
-
-nav.top {
+#top nav {
 	width: 90%;
 	margin-left: 5%;
 	padding: 10px 0;
-	color: #FFF;
 }
 
 /* slide show styling 
@@ -104,12 +97,13 @@ li {
 a {
 	color: #FFF;
 	margin: 10px;
+	text-decoration: none;
 	transition: color .5s ease-in-out;
 }
 
 a:hover {
 	color: #FFD700;
-	text-decoration: none;
+	cursor: pointer;
 }
 
 .top a:hover {

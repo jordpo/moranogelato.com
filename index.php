@@ -8,9 +8,9 @@
 </head>
 <body>
 	<div id="wrapper">
-		<header class="top">
+		<header id="top">
 			<img id="top_img" src="img/logo.jpg">
-			<nav class="top">
+			<nav>
 				<a id="about">About</a>
 				<a id="press">Press</a>
 				<a id="contact">Contact</a>
