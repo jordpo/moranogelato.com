@@ -4,7 +4,7 @@
 	<title>Morano Gelato - Puro Gelato Italiano</title>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="shortcut icon" href="/favicon.ico" >
+	<link rel="shortcut icon" href="img/favicon.ico" >
 </head>
 <body>
 	<div id="wrapper">
