@@ -43,11 +43,10 @@ $('#contact').on('click', function(e){
 // return the original content when main img is clicked
 $('#top_img').on('click', function(e){
     e.preventDefault();
-	console.log("I was clicked!");
     $.ajax('content/main.html', {
     	success: function(response) {
     		$('#content').html(response);
     	}
     })
-    $('#img').css('height','400px');
+    $('#img').css('height','500px');
 });
