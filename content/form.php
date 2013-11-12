@@ -27,10 +27,10 @@ if ($_POST['first_name'] == "" ||
 	<div class="error">Please make sure to fill in properly all required fields.</div>
 <?php else: ?>
 	<header>
-		<h2>Contact Us!</h2>
+		<h2>Thank you!</h2>
 	</header>
 	<article id='form_success'>
-		<p>Thank you for your submission!</p>
+		<p>We will respond to your message shortly.</p>
 	</article>
 <?php 
 	/* Send out an email wth form info 
