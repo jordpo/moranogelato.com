@@ -24,6 +24,8 @@ header {
 	width: 38%;
 	margin-left: 31%;
 	padding-bottom: 10px;
+	background-color: #000;
+	border: 4px solid #FFF;
 }
 
 #top_img {
@@ -31,25 +33,13 @@ header {
 	width: 80%;
 	margin-top: 15px;
 	opacity: 1;
-	transition: box-shadow .8s ease-in-out;
 }
 
 #top_img:hover {
-	box-shadow: 10px 5px 20px #FFD700;
 	cursor: pointer;
 }
 
-.top {
-	background-color: #FFF;
-	font-size: 1.5em;
-}
-
-.top h1 {
-	margin: 0 0 25px 0;
-}
-
 .top a {
-	color: #000;
 	transition: text-shadow .8s ease-in-out;
 }
 
@@ -62,6 +52,7 @@ nav.top {
 	width: 90%;
 	margin-left: 5%;
 	padding: 10px 0;
+	color: #FFF;
 }
 
 /* slide show styling 
