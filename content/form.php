@@ -59,7 +59,7 @@ if ($_POST['first_name'] == "" ||
     $email_body = $email_body . "Subscribe to monthly newsletter: " . $subscribe;
 
     $mail->SetFrom($email, $name);
-    $address = "jordanmorano@g.harvard.edu";
+    $address = "moranogelato@gmail.com";
     $mail->AddAddress($address, "Morano Gelato Inc.");
     $mail->Subject    = "Morano Gelato Inc Form Submission | " . $name;
     $mail->MsgHTML($email_body); 
