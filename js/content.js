@@ -82,4 +82,8 @@ $('form').on('submit',function(event) {
             $("#msg_art").html('<article><p>There was an error. Please try again.</p></article>');
         }
     });
+    // scroll back up
+    $("html, body").animate({
+        scrollTop: 0
+    }, 0); 
 });
