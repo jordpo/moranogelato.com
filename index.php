@@ -18,7 +18,8 @@
 		</header>
 		<div id="slide_parent">
 			<div id="slideshow">
-				<div id="img"></div>
+				<div id="img_left"></div>
+				<div id="img_right"></div>
 			</div>
 		</div>
 		<section id="content">
@@ -29,7 +30,7 @@
 				<p>
 					Sicilian Style Gelato<br>
 					Fresh &amp; Local Ingredients<br>
-					Artisanal Product Made Daily In-House<br>
+					Artisanal Product Made Daily On-Site<br>
 				</p>
 
 				<p class="announcement">Check out our Hanover location!</p>
