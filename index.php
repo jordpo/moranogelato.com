@@ -12,16 +12,15 @@
 			<h1>Morano Gelato</h1>
 		</header>
 		<nav class="top">
-			<a id="about" href="#internallink">About</a>
-			<a id="press" href="#content">Press</a>
-			<a id="contact" href="#content">Contact</a>
+			<a id="about">About</a>
+			<a id="press">Press</a>
+			<a id="contact">Contact</a>
 		</nav>
 		<div id="slide_parent">
 			<div id="slideshow">
 				<div id="img"></div>
 			</div>
 		</div>
-		<a name="internallink"></a>
 		<section id="content">
 			<article>
 				<header>

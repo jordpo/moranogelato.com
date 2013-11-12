@@ -1,6 +1,7 @@
 // ajax requests to refresh #content section
 
 $('#about').on('click', function(e){
+    e.preventDefault();
     $.ajax('content/about.html', {
     	success: function(response) {
     		$('#content').html(response);
@@ -10,6 +11,7 @@ $('#about').on('click', function(e){
 });
 
 $('#products').on('click', function(e){
+    e.preventDefault();
     $.ajax('content/products.html', {
     	success: function(response) {
     		$('#content').html(response);
@@ -19,6 +21,7 @@ $('#products').on('click', function(e){
 });
 
 $('#press').on('click', function(e){
+    e.preventDefault();
     $.ajax('content/press.html', {
     	success: function(response) {
     		$('#content').html(response);
@@ -28,6 +31,7 @@ $('#press').on('click', function(e){
 });
 
 $('#contact').on('click', function(e){
+    e.preventDefault();
     $.ajax('content/contact.html', {
     	success: function(response) {
     		$('#content').html(response);
@@ -38,6 +42,7 @@ $('#contact').on('click', function(e){
 
 // return the original content when main img is clicked
 $('#top_img').on('click', function(e){
+    e.preventDefault();
 	console.log("I was clicked!");
     $.ajax('content/main.html', {
     	success: function(response) {

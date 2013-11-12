@@ -108,7 +108,6 @@ li {
 }
 
 a {
-	text-decoration: none;
 	color: #FFF;
 	margin: 10px;
 	transition: color .5s ease-in-out;
@@ -117,6 +116,10 @@ a {
 a:hover {
 	color: #FFD700;
 	text-decoration: none;
+}
+
+.top a:hover {
+	color: #000;
 }
 
 
