@@ -11,13 +11,13 @@ $('#formtext').keyup(function(){
     
     var how_many_characters = value.length;
 
-    var how_many_left = 250 - how_many_characters;
+    var how_many_left = 500 - how_many_characters;
 
     $('#formtext-error').html('You have ' + how_many_left + ' characters left.')
 
     if (how_many_left == 0) {
         $('#formtext-error').css('color','red');
-    } else if (how_many_left < 30) {
+    } else if (how_many_left < 50) {
         $('#formtext-error').css('color','orange');
     } else {
         $('#formtext-error').css('color','#FFF');
