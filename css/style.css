@@ -33,14 +33,14 @@ body {
 header {
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	font-weight: bold;
-	width: 30%;
-	margin-left: 35%;
+	width: 38%;
+	margin-left: 31%;
 	padding-bottom: 10px;
 }
 
 #top_img {
 	border: 5px solid #FFD700;
-	width: 45%;
+	width: 40%;
 	margin-top: 15px;
 	opacity: 1;
 	transition: box-shadow .8s ease-in-out;
@@ -71,8 +71,8 @@ header {
 }
 
 nav.top {
-	width: 30%;
-	margin-left: 35%;
+	width: 38%;
+	margin-left: 31%;
 	padding: 10px 0;
 }
 
