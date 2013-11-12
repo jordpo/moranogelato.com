@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Morano Gelato</title>
+	<title>Morano Gelato - Puro Gelato Italiano</title>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div id="wrapper">
-		<header class="top">
-			<img id="top_img" src="img/logo.jpg">
-			<h1>Morano Gelato</h1>
-		</header>
-		<nav class="top">
-			<a id="about">About</a>
-			<a id="press">Press</a>
-			<a id="contact">Contact</a>
-		</nav>
+		<div id="bg_wrap">
+			<header class="top">
+				<img id="top_img" src="img/logo.jpg">
+				<h1>Morano Gelato</h1>
+			</header>
+			<nav class="top">
+				<a id="about">About</a>
+				<a id="press">Press</a>
+				<a id="contact">Contact</a>
+			</nav>
+		</div>
 		<div id="slide_parent">
 			<div id="slideshow">
 				<div id="img"></div>
@@ -26,13 +28,17 @@
 				<header>
 					<h2>Pure Italian Gelato</h2>
 				</header>
-				<ul>
-					<li>Sicilian Style Gelato</li>
-					<li>Fresh &amp; Local Ingredients</li>
-					<li>Artisanal Product Made Daily In-House</li>
-				</ul>
+				<p>
+					Sicilian Style Gelato<br>
+					Fresh &amp; Local Ingredients<br>
+					Artisanal Product Made Daily In-House<br>
+				</p>
+
+				<p class="announcement">Check out our Hanover location!</p>
+				<a class="big_link" href="http://www.moranogelatohanover.com">Morano Gelato Hanover</a>
 			</article>
 		</section>
+		<div id="bg_footer"></div>
 		<footer>
 			<p>&copy; <?php echo date('Y');?> Morano Gelato Inc.</p>
 			<p>PO Box 5647 Hanover, NH 03755 :: 347.210.4933 :: moranogelato@gmail.com</p>

@@ -6,8 +6,6 @@ body {
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	background-image: url(../img/border_logo.png);
-	background-size: 40px 25px;
 }
 
 #wrapper {
@@ -16,18 +14,33 @@ body {
 	padding-bottom: 0;
 }
 
+#bg_wrap {
+	background-image: url(../img/border_logo.png);
+	background-size: 40px 25px;
+	margin: 15px;
+}
 
+#bg_footer {
+	background-image: url(../img/border_logo.png);
+	background-size: 40px 25px;
+	height: 25px;
+	padding: 0;
+	margin: -15px 0 0 0;
+}
 
 /* header and top header elements */
 
 header {
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	font-weight: bold;
+	width: 30%;
+	margin-left: 35%;
+	padding-bottom: 10px;
 }
 
 #top_img {
 	border: 5px solid #FFD700;
-	width: 200px;
+	width: 45%;
 	margin-top: 15px;
 	opacity: 1;
 	transition: box-shadow .8s ease-in-out;
@@ -58,7 +71,9 @@ header {
 }
 
 nav.top {
-	padding-bottom: 10px;
+	width: 30%;
+	margin-left: 35%;
+	padding: 10px 0;
 }
 
 /* slide show styling 
@@ -161,6 +176,11 @@ a:hover {
 	font-size: 1.25em;
 	display: block;
 	padding: 10px;
+}
+
+.announcement {
+	font-size: 1.5em;
+	margin-bottom: 0;
 }
 
 footer {
