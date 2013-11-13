@@ -20,11 +20,6 @@
 		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 		<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160" />
-		<meta name="msapplication-TileColor" content="#da532c" />
-		<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
-		<meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />
-		<meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
-		<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
 
 		<!-- open graph-->
 		<meta property="og:image" content="http://moranogelato.com/img/site.jpg" />
