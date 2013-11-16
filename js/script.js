@@ -7,7 +7,7 @@ $('#about').on('click', function(e){
     		$('#content').html(response);
     	}
     })
-   $('#img_left, #img_right').css('height','200px');
+   $('#slideshow').css('height','200px');
 });
 
 $('#products').on('click', function(e){
@@ -17,7 +17,7 @@ $('#products').on('click', function(e){
     		$('#content').html(response);
     	}
     })
-    $('#img_left, #img_right').css('height','200px');
+    $('#slideshow').css('height','200px');
 });
 
 $('#press').on('click', function(e){
@@ -27,7 +27,7 @@ $('#press').on('click', function(e){
     		$('#content').html(response);
     	}
     })
-    $('#img_left, #img_right').css('height','200px');
+    $('#slideshow').css('height','200px');
 });
 
 $('#contact').on('click', function(e){
@@ -37,7 +37,7 @@ $('#contact').on('click', function(e){
     		$('#content').html(response);
     	}
     })
-    $('#img_left, #img_right').css('height','200px');
+    $('#slideshow').css('height','200px');
 });
 
 // return the original content when main img is clicked
@@ -48,5 +48,13 @@ $('#top_img').on('click', function(e){
     		$('#content').html(response);
     	}
     })
-    $('#img_left, #img_right').css('height','500px');
+    $('#slideshow').css('height','500px');
 });
+
+// animate slideshow
+
+function slideshow(){
+    $('#img_slide').animate({right:'1600px'}, 25000);
+}
+
+slideshow();
