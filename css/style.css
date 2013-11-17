@@ -12,7 +12,7 @@ body {
 
 #wrapper {
 	width: 100%;
-	margin-bottom: 0;
+	margin:0;
 	padding-bottom: 0;
 }
 
@@ -52,11 +52,12 @@ header {
 	border-top: 12px solid #FFD700;
 	border-bottom: 12px solid #000;
 	margin: 20px 0;
-	background-color: #FFF;
+	background-color: #000;
 }
 
 #slideshow {
-	width: 100%;
+	width: 1000px;
+	margin-left: 10%;
 	border-top: 3px solid #000;
 	border-bottom: 5px solid #FFD700;
 	overflow: hidden;

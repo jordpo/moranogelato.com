@@ -24,7 +24,7 @@ $('#contact').on('click', function(e){
     		$('#content').html(response);
     	}
     })
-    $('#img_slide').animate({right:'1600px'}, 1000);
+    $('#img_slide').animate({right:'2000px'}, 1000);
 });
 
 // return the original content when main img is clicked
