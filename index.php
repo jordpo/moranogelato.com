@@ -27,11 +27,11 @@
 	<body>
 		<div id="wrapper">
 			<header id="top">
-				<img id="top_img" src="img/logo.jpg" alt="Morano Gelato Inc Logo">
+				<a href="#read"><img id="top_img" src="img/logo.jpg" alt="Morano Gelato Inc Logo"></a>
 				<nav>
-					<a id="about">About</a>
-					<a id="press">Press</a>
-					<a id="contact">Contact</a>
+					<a id="about" href="#read">About</a>
+					<a id="press" href="#read">Press</a>
+					<a id="contact" href="#read">Contact</a>
 				</nav>
 			</header>
 			<div id="slide_parent">
@@ -39,6 +39,7 @@
 					<img id="img_slide" src="img/slide_left.jpg" alt="gelato">
 				</div>
 			</div>
+			<a name="read"></a>
 			<section id="content">
 				<article>
 					<header>

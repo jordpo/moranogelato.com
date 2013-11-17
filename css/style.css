@@ -62,10 +62,6 @@ header {
 	overflow: hidden;
 	background-color: #000;
 	height: 500px;
-	-webkit-transition: height .9s ease-in-out;
-	-moz-transition: height .9s ease-in-out;
-	-o-transition: height .9s ease-in-out;
-	transition: height .9s ease-in-out;
 }
 
 #img_slide {
