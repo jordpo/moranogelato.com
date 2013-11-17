@@ -1,38 +1,116 @@
 // ajax requests to refresh #content section
 
 $('#about').on('click', function(e){
-    $.ajax('content/about.html', {
-    	success: function(response) {
-    		$('#content').html(response);
-    	}
-    })
-   $('#img_slide').animate({right:'500px'}, 1000);
+    $('#about_art').css('display','block');
+    $('#main, #news, #msg_art').css('display','none');
+    $('#img_slide').animate({right:'500px'}, 1000);
 });
 
 $('#press').on('click', function(e){
-    $.ajax('content/press.html', {
-    	success: function(response) {
-    		$('#content').html(response);
-    	}
-    })
+    $('#news').css('display','block');
+    $('#about_art, #main, #msg_art').css('display','none');
     $('#img_slide').animate({right:'1000px'}, 1000);
 });
 
 $('#contact').on('click', function(e){
-    $.ajax('content/contact.html', {
-    	success: function(response) {
-    		$('#content').html(response);
-    	}
-    })
+    $('#msg_art').css('display','block');
+    $('#about_art, #news, #main').css('display','none');
     $('#img_slide').animate({right:'1500px'}, 1000);
 });
 
 // return the original content when main img is clicked
 $('#top_img').on('click', function(e){
-    $.ajax('content/main.html', {
-    	success: function(response) {
-    		$('#content').html(response);
-    	}
-    })
+    $('#main').css('display','block');
+    $('#about_art, #news, #msg_art').css('display','none');
     $('#img_slide').animate({right:'0px'}, 1000);
+});
+
+/* form validations 
+-------------------------------------------------------------- */
+
+$('#formtext').keyup(function(){
+
+    // with every keyup the value of the text field is captured 
+    // other keyboard listeners - keydown, keypress 
+    // keydown fires before the new letter is captured 
+
+    var value = $(this).val();
+    
+    var how_many_characters = value.length;
+
+    var how_many_left = 500 - how_many_characters;
+
+    $('#formtext-error').html('You have ' + how_many_left + ' characters left.')
+
+    if (how_many_left == 0) {
+        $('#formtext-error').css('color','red');
+    } else if (how_many_left < 50) {
+        $('#formtext-error').css('color','orange');
+    } else {
+        $('#formtext-error').css('color','#FFF');
+    }
+
+});
+
+var $submit = $("input[type='submit']");
+var $required = $('.required');
+
+/* validation functions 
+--------------------------------------------- */
+function containsBlanks(){
+    var blanks = $required.map(function(){ return $(this).val() == ''; });
+    return $.inArray(true, blanks) != -1;
+}
+
+function requiredFilledIn(){
+    if (containsBlanks() || !$('#email').validEmail()) {
+        $submit.attr('disabled', 'disabled');
+    } else {
+        $submit.removeAttr('disabled');
+    }
+}
+
+/* validation functions end
+--------------------------------------------- */
+$('form span').hide();
+
+$('input, textarea').on('focus', function(){
+    $(this).next().next().fadeIn('slow');
+}).on('blur', function(){
+    $(this).next().next().fadeOut('slow');
+}).on('keyup', function(){
+    // check all required fields
+    requiredFilledIn();
+});
+
+$("#email").validEmail({on:'keyup', 
+    success: function(){
+        $(this).next().next().removeClass('error').addClass('valid');
+    }, failure: function(){
+        $(this).next().next().removeClass('valid').addClass('error');
+    }});
+
+requiredFilledIn();
+
+/* form submit via Ajax
+------------------------------------------- */
+
+$('form').on('submit',function(event) {
+    event.preventDefault();
+    $.ajax({
+        url: "content/form.php",            // form processing will happen here 
+        type: "post",
+        data: $('form').serialize(),
+        success: function(response){
+            $("#content").html(response);
+        },
+        failure:function(){
+            $('form').remove();
+            $("#msg_art").html('<article><p>There was an error. Please try again.</p></article>');
+        }
+    });
+    // scroll back up
+    $("html, body").animate({
+        scrollTop: 0
+    }, 0); 
 });

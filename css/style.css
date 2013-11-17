@@ -98,6 +98,11 @@ a:hover {
 	color: #000;
 }
 
+/* initial content div display*/
+
+#about_art, #news, #msg_art {
+	display: none;
+}
 
 /* specific styling */
 #content, footer {
@@ -126,11 +131,14 @@ a:hover {
 
 #content header {
 	border-bottom: 2px dotted #FFF;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
+	padding-bottom: 0;
 }
 
 #content header h2 {
-	margin: 15px 0;
+	text-align: center;
+	padding: 0;
+	margin: 10px;
 }
 
 .big_link {
@@ -217,12 +225,3 @@ input[type="submit"]:hover {
 .valid {
 	color: green;
 }
-
-/* keyframes 
------------------------------- */
-
-@-webkit-keyframes slideshow {
-	33%  {background-position: -1000px}
-	65%  {background-position: -2000px}
-}
-
