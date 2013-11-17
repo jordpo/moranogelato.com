@@ -34,12 +34,12 @@
 					<a id="contact" href="#read">Contact</a>
 				</nav>
 			</header>
+			<a name="read"></a>
 			<div id="slide_parent">
 				<div id="slideshow">
 					<img id="img_slide" src="img/slide_left.jpg" alt="gelato">
 				</div>
 			</div>
-			<a name="read"></a>
 			<section id="content">
 				<article>
 					<header>
