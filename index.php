@@ -112,7 +112,7 @@
 			</section>
 			<footer>
 				<p>&copy; <?php echo date('Y');?> Morano Gelato Inc.</p>
-				<p>PO Box 5647 Hanover, NH 03755 :: 347.210.4933 :: moranogelato@gmail.com</p>
+				<p>PO Box 5647 Hanover, NH 03755 :: moranogelato@gmail.com</p>
 				<nav>
 					<a href="https://www.facebook.com/moranogelatoinc?ref=br_tf">FB</a>
 					<a href="https://twitter.com/MoranoGelato">Twitter</a>
