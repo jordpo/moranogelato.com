@@ -26,7 +26,7 @@
 
 		<!-- Google Maps API -->
     <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCABFKClyE9sq43OONp-ywXGyC3capSKz0&sensor=false">
+      src="https://maps.googleapis.com/maps/api/js?sensor=false">
     </script>
 	</head>
 	<body>

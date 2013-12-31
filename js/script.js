@@ -22,6 +22,8 @@ $('#loc').on('click', function(e){
     $('#locations').css('display','block');
     $('#about_art, #news, #main, #contact').css('display','none');
     $('#img_slide').animate({right:'1500px'}, 1000);
+    // resize google map
+    initialize();
 });
 
 // return the original content when main img is clicked
@@ -123,14 +125,23 @@ $('form').on('submit',function(event) {
 
 
 // Google Maps for Locations
-
 function initialize() {
-    var mapOptions = {
-        center: new google.maps.LatLng(-34.397, 150.644),
-        zoom: 8
-    };
-    var map = new google.maps.Map(document.getElementById("map-canvas"),
-        mapOptions);
+  var myLatlng = new google.maps.LatLng(43.696117, -72.289804);
+  var mapOptions = {
+    zoom: 8,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Morano Gelato Hanover'
+  });
+
+    google.maps.event.trigger(map, 'resize');
+    var position = map.getCenter();
+    map.setCenter(position);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
