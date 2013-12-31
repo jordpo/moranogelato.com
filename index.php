@@ -23,6 +23,11 @@
 
 		<!-- open graph-->
 		<meta property="og:image" content="http://moranogelato.com/img/site.jpg" />
+
+		<!-- Google Maps API -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCABFKClyE9sq43OONp-ywXGyC3capSKz0&sensor=false">
+    </script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -30,6 +35,7 @@
 				<a href="#read"><img id="top_img" src="img/logo.jpg" alt="Morano Gelato Inc Logo"></a>
 				<nav>
 					<a id="about" href="#read">About</a>
+					<a id="loc" href="#read">Locations</a>
 					<a id="press" href="#read">Press</a>
 					<a id="contact" href="#read">Contact</a>
 				</nav>
@@ -43,16 +49,8 @@
 			<section id="content">
 				<article id="main">
 					<header>
-						<h2>Pure Italian Gelato</h2>
+						<h1>Traditional Sicilian Gelato</h1>
 					</header>
-					<p>
-						Sicilian Style Gelato<br>
-						Fresh &amp; Local Ingredients<br>
-						Artisanal Product Made Daily On-Site<br>
-					</p>
-
-					<p class="announcement">Check out our Hanover location!</p>
-					<a class="big_link" href="http://www.moranogelatohanover.com">Morano Gelato Hanover</a>
 				</article>
 				<article id="about_art">
 					<header>
@@ -70,7 +68,16 @@
 					<br /> <br />
 					In September 2013, Morgan sold the Morano Gelato-Hanover shop to Bill &amp; Pam Miles, and John &amp; Jenn Langhus, in hopes of expanding the gelato and brand. Morgan plans to build a Morano Gelato franchise throughout the country that will continue to promote true Italian gelato- making through small batches made on-site daily in each location, just as done in Hanover and throughout Italy.</p>
 				</article>
-				<article id='news'>
+				<article id="locations">
+					<header>
+						<h2>Morano Gelato Store Locations</h2>
+					</header>
+					<p>
+						<a href="http://www.moranogelatohanover.com/">Morano Gelato Hanover</a>
+					</p>
+					<div id="map-canvas"></div>
+				</article>
+				<article id='news'>	
 					<header>
 						<h2>Morano Gelato in the News</h2>
 					</header>
@@ -80,7 +87,8 @@
 				</article>
 				<article id="msg_art">
 					<header>
-						<h2>Contact Us!</h2>
+						<h2>Interested in owning a Morano Gelato store? We're franchising! Contact us for additional information.</h2>
+						<p>Or for inquiries / gelato orders specific to Morano Gelato Hanover, please visit their website <a href="http://www.moranogelatohanover.com/">here</a>.</p>
 					</header>
 					<p>Do you love Italy: the culture, history, and food? More importantly, do you love gelato?!</p>
 					<p>We’re looking for hard-working entrepreneurs who share our passion for Italy and gelato. If you are interested in supporting the tradition of true Italian gelato-making, love working with people, are community-oriented and are environmentally conscious, join Morano Gelato in our venture to bring our pure Italian gelato experience to communities throughout America, one cup at a time.</p>
@@ -112,7 +120,7 @@
 			</section>
 			<footer>
 				<p>&copy; <?php echo date('Y');?> Morano Gelato Inc.</p>
-				<p>PO Box 5647 Hanover, NH 03755 :: moranogelato@gmail.com</p>
+				<p>10 Benning Street, Suite 2-229, West Lebanon, NH 03784-3402 :: <a href="mailto:info@moranogelato.com?Subject=Website%20Inquiry" target="_top">info@moranogelato.com</a></p>
 				<nav>
 					<a href="https://www.facebook.com/moranogelatoinc?ref=br_tf">FB</a>
 					<a href="https://twitter.com/MoranoGelato">Twitter</a>

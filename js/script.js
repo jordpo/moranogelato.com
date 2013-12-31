@@ -2,19 +2,25 @@
 
 $('#about').on('click', function(e){
     $('#about_art').css('display','block');
-    $('#main, #news, #msg_art').css('display','none');
+    $('#main, #news, #msg_art, #locations').css('display','none');
     $('#img_slide').animate({right:'500px'}, 1000);
 });
 
 $('#press').on('click', function(e){
     $('#news').css('display','block');
-    $('#about_art, #main, #msg_art').css('display','none');
+    $('#about_art, #main, #msg_art, #locations').css('display','none');
     $('#img_slide').animate({right:'1000px'}, 1000);
 });
 
 $('#contact').on('click', function(e){
     $('#msg_art').css('display','block');
-    $('#about_art, #news, #main').css('display','none');
+    $('#about_art, #news, #main, #locations').css('display','none');
+    $('#img_slide').animate({right:'1500px'}, 1000);
+});
+
+$('#loc').on('click', function(e){
+    $('#locations').css('display','block');
+    $('#about_art, #news, #main, #contact').css('display','none');
     $('#img_slide').animate({right:'1500px'}, 1000);
 });
 
@@ -114,3 +120,17 @@ $('form').on('submit',function(event) {
         scrollTop: 0
     }, 0); 
 });
+
+
+// Google Maps for Locations
+
+function initialize() {
+    var mapOptions = {
+        center: new google.maps.LatLng(-34.397, 150.644),
+        zoom: 8
+    };
+    var map = new google.maps.Map(document.getElementById("map-canvas"),
+        mapOptions);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);

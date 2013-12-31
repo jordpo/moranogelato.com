@@ -16,6 +16,15 @@ body {
 	padding-bottom: 0;
 }
 
+#main header {
+	width: 100%;
+	margin-left: 0;
+	font-size: 1.5em;
+}
+	#main header h1 {
+		margin: 15px;
+	}
+
 /* header and top header elements */
 
 header {
@@ -100,7 +109,7 @@ a:hover {
 
 /* initial content div display*/
 
-#about_art, #news, #msg_art {
+#about_art, #news, #msg_art, #locations {
 	display: none;
 }
 
@@ -122,6 +131,13 @@ a:hover {
 	border-bottom: 2px dotted #FFF;
 	padding-bottom:15px;
 }
+	#msg_art header {
+		width: 100%;
+		margin: 20px 0;
+	}
+		#msg_art header a {
+			margin: 0;
+		}
 
 #product_art ul {
 	display: inline-block;
@@ -224,4 +240,15 @@ input[type="submit"]:hover {
 
 .valid {
 	color: green;
+}
+
+/* Locations Map Canvas*/
+#map-canvas {
+	width: 70%;
+	position: relative;
+	left : 50%;
+	margin-left: -35%;
+	margin-bottom: 25px;
+	height: 300px;
+	background-color: #FFF;
 }
