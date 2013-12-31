@@ -20,7 +20,7 @@ $('#contact').on('click', function(e){
 
 $('#loc').on('click', function(e){
     $('#locations').css('display','block');
-    $('#about_art, #news, #main, #contact').css('display','none');
+    $('#about_art, #news, #main, #msg_art').css('display','none');
     $('#img_slide').animate({right:'1500px'}, 1000);
     // resize google map
     initialize();
@@ -128,7 +128,7 @@ $('form').on('submit',function(event) {
 function initialize() {
   var myLatlng = new google.maps.LatLng(43.696117, -72.289804);
   var mapOptions = {
-    zoom: 8,
+    zoom: 10,
     center: myLatlng
   }
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);

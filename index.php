@@ -87,8 +87,8 @@
 				</article>
 				<article id="msg_art">
 					<header>
-						<h2>Interested in owning a Morano Gelato store? We're franchising! Contact us for additional information.</h2>
-						<p>Or for inquiries / gelato orders specific to Morano Gelato Hanover, please visit their website <a href="http://www.moranogelatohanover.com/">here</a>.</p>
+						<h2>Interested in owning a Morano Gelato store? We're franchising! <br />Contact us for additional information.</h2>
+						<p>Or for inquiries / gelato orders specific to Morano Gelato Hanover, please visit their <u><a href="http://www.moranogelatohanover.com/">website</a></u>.</p>
 					</header>
 					<p>Do you love Italy: the culture, history, and food? More importantly, do you love gelato?!</p>
 					<p>We’re looking for hard-working entrepreneurs who share our passion for Italy and gelato. If you are interested in supporting the tradition of true Italian gelato-making, love working with people, are community-oriented and are environmentally conscious, join Morano Gelato in our venture to bring our pure Italian gelato experience to communities throughout America, one cup at a time.</p>
