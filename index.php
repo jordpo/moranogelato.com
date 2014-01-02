@@ -5,7 +5,7 @@
 
 		<title>Morano Gelato - Pure Italian Gelato</title>
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css?version=3">
 		
 		<!-- favicons -->
 		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
@@ -46,7 +46,7 @@
 					<img id="img_slide" src="img/slide_left.jpg" alt="gelato">
 				</div>
 			</div>
-			<section id="content">
+			<section class="content">
 				<article id="main">
 					<header>
 						<h1>Traditional Sicilian Gelato</h1>
@@ -72,9 +72,6 @@
 					<header>
 						<h2>Morano Gelato Store Locations</h2>
 					</header>
-					<p>
-						<a href="http://www.moranogelatohanover.com/">Morano Gelato Hanover</a>
-					</p>
 					<div id="map-canvas"></div>
 				</article>
 				<article id='news'>	
@@ -132,6 +129,6 @@
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/validEmail.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/script.js?version=3"></script>
 	</body>
 </html>

@@ -131,13 +131,25 @@ function initialize() {
     zoom: 10,
     center: myLatlng
   }
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    var image = 'img/mg_map.jpg';
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'Morano Gelato Hanover',
+        icon: image
+    });
 
-  var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Morano Gelato Hanover'
-  });
+    var contentString = '<article class="map_info">' +
+        '<a target="_blank" href="http://www.moranogelatohanover.com/"><img src="img/mg_hanover.jpg" alt="Morano Gelato Hanover"/><br />Morano Gelato Hanover</a>' +
+    '</article>'
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString
+    });
+
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+    });
 
     google.maps.event.trigger(map, 'resize');
     var position = map.getCenter();
