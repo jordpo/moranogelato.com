@@ -126,7 +126,7 @@ $('form').on('submit',function(event) {
 
 // Google Maps for Locations
 function initialize() {
-  var myLatlng = new google.maps.LatLng(43.696117, -72.289804);
+  var myLatlng = new google.maps.LatLng(43.700677, -72.289526);
   var mapOptions = {
     zoom: 10,
     center: myLatlng
@@ -142,6 +142,7 @@ function initialize() {
 
     var contentString = '<article class="map_info">' +
         '<a target="_blank" href="http://www.moranogelatohanover.com/"><img src="img/mg_hanover.jpg" alt="Morano Gelato Hanover"/><br />Morano Gelato Hanover</a>' +
+        '<p>57 S Main St #101, Hanover, NH 03755 </p>' +
     '</article>'
     var infowindow = new google.maps.InfoWindow({
       content: contentString
