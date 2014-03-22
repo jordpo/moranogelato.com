@@ -1,26 +1,26 @@
 // ajax requests to refresh #content section
 
 $('#about').on('click', function(e){
-    $('#about_art').css('display','block');
+    $('.about_art').css('display','block');
     $('#main, #news, #msg_art, #locations').css('display','none');
     $('#img_slide').animate({right:'500px'}, 1000);
 });
 
 $('#press').on('click', function(e){
     $('#news').css('display','block');
-    $('#about_art, #main, #msg_art, #locations').css('display','none');
+    $('.about_art, #main, #msg_art, #locations').css('display','none');
     $('#img_slide').animate({right:'1000px'}, 1000);
 });
 
 $('#contact').on('click', function(e){
     $('#msg_art').css('display','block');
-    $('#about_art, #news, #main, #locations').css('display','none');
+    $('.about_art, #news, #main, #locations').css('display','none');
     $('#img_slide').animate({right:'1500px'}, 1000);
 });
 
 $('#loc').on('click', function(e){
     $('#locations').css('display','block');
-    $('#about_art, #news, #main, #msg_art').css('display','none');
+    $('.about_art, #news, #main, #msg_art').css('display','none');
     $('#img_slide').animate({right:'1500px'}, 1000);
     // resize google map
     initialize();
@@ -29,21 +29,21 @@ $('#loc').on('click', function(e){
 // return the original content when main img is clicked
 $('#top_img').on('click', function(e){
     $('#main').css('display','block');
-    $('#about_art, #news, #msg_art').css('display','none');
+    $('.about_art, #news, #msg_art').css('display','none');
     $('#img_slide').animate({right:'0px'}, 1000);
 });
 
-/* form validations 
+/* form validations
 -------------------------------------------------------------- */
 
 $('#formtext').keyup(function(){
 
-    // with every keyup the value of the text field is captured 
-    // other keyboard listeners - keydown, keypress 
-    // keydown fires before the new letter is captured 
+    // with every keyup the value of the text field is captured
+    // other keyboard listeners - keydown, keypress
+    // keydown fires before the new letter is captured
 
     var value = $(this).val();
-    
+
     var how_many_characters = value.length;
 
     var how_many_left = 500 - how_many_characters;
@@ -63,7 +63,7 @@ $('#formtext').keyup(function(){
 var $submit = $("input[type='submit']");
 var $required = $('.required');
 
-/* validation functions 
+/* validation functions
 --------------------------------------------- */
 function containsBlanks(){
     var blanks = $required.map(function(){ return $(this).val() == ''; });
@@ -91,7 +91,7 @@ $('input, textarea').on('focus', function(){
     requiredFilledIn();
 });
 
-$("#email").validEmail({on:'keyup', 
+$("#email").validEmail({on:'keyup',
     success: function(){
         $(this).next().next().removeClass('error').addClass('valid');
     }, failure: function(){
@@ -106,7 +106,7 @@ requiredFilledIn();
 $('form').on('submit',function(event) {
     event.preventDefault();
     $.ajax({
-        url: "content/form.php",            // form processing will happen here 
+        url: "content/form.php",            // form processing will happen here
         type: "post",
         data: $('form').serialize(),
         success: function(response){
@@ -120,7 +120,7 @@ $('form').on('submit',function(event) {
     // scroll back up
     $("html, body").animate({
         scrollTop: 0
-    }, 0); 
+    }, 0);
 });
 
 
