@@ -10,7 +10,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
 
 		<!-- Stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/style.css?version=6">
+		<link rel="stylesheet" type="text/css" href="css/style.css?version=7">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- favicons -->
@@ -38,22 +38,41 @@
 	<body>
 		<div class="container">
 			<header id="top">
-				<a href="#read"><img id="top_img" src="img/logo.jpg" alt="Morano Gelato Inc Logo"></a>
-				<nav>
-					<ul>
-						<li><a id="about" href="#read">About</a></li>
-						<li><a id="loc" href="#read">Locations</a></li>
-						<li><a id="press" href="#read">Press</a></li>
-						<li><a id="contact" href="#read">Contact</a></li>
-					</ul>
-				</nav>
+				<a href="#read"><img id="top_img" src="img/mg.jpg" alt="Morano Gelato Inc Logo"></a>
 			</header>
-			<a name="read"></a>
-			<div id="slide_parent">
-				<div id="slideshow">
-					<img id="img_slide" src="img/slide_left.jpg" alt="gelato">
-				</div>
+
+			<!-- Slideshow carousel -->
+			<div id="carousel" class="carousel slide" data-ride="carousel">
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+			      <img src="img/slideshow/gelato.jpg" alt="gelato yum">
+			    </div>
+			    <div class="item">
+			      <img src="img/slideshow/biscoff.jpg" alt="biscoff gelato">
+			    </div>
+			    <div class="item">
+			      <img src="img/slideshow/shirt.jpg" alt="morano gelato shirt">
+			    </div>
+			    <div class="item">
+			      <img src="img/slideshow/nuts.jpg" alt="pistachios and hazelnuts">
+			    </div>
+			    <div class="item">
+			      <img src="img/slideshow/chocolate_chip.jpg" alt="chocolate chip gelato">
+			    </div>
+			  </div>
 			</div>
+
+			<nav id="top_nav">
+				<ul>
+					<li><a id="about" href="#read">About</a></li>
+					<li><a id="loc" href="#read">Locations</a></li>
+					<li><a id="press" href="#read">Press</a></li>
+					<li><a id="contact" href="#read">Contact</a></li>
+				</ul>
+			</nav>
+			<a name="read"></a>
+
 			<section class="content">
 				<article id="main">
 					<header>
@@ -167,8 +186,11 @@
 			</footer>
 		</div>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-carousel.js"></script>
+
 		<script type="text/javascript" src="js/validEmail.js"></script>
-		<script type="text/javascript" src="js/script.js?version=5"></script>
+		<script type="text/javascript" src="js/script.js?version=6"></script>
 	</body>
 </html>

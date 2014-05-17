@@ -3,25 +3,21 @@
 $('#about').on('click', function(e){
     $('.about_art').css('display','block');
     $('#main, #news, #msg_art, #locations').css('display','none');
-    $('#img_slide').animate({right:'500px'}, 1000);
 });
 
 $('#press').on('click', function(e){
     $('#news').css('display','block');
     $('.about_art, #main, #msg_art, #locations').css('display','none');
-    $('#img_slide').animate({right:'1000px'}, 1000);
 });
 
 $('#contact').on('click', function(e){
     $('#msg_art').css('display','block');
     $('.about_art, #news, #main, #locations').css('display','none');
-    $('#img_slide').animate({right:'1500px'}, 1000);
 });
 
 $('#loc').on('click', function(e){
     $('#locations').css('display','block');
     $('.about_art, #news, #main, #msg_art').css('display','none');
-    $('#img_slide').animate({right:'1500px'}, 1000);
     // resize google map
     initialize();
 });
@@ -30,7 +26,6 @@ $('#loc').on('click', function(e){
 $('#top_img').on('click', function(e){
     $('#main').css('display','block');
     $('.about_art, #news, #msg_art').css('display','none');
-    $('#img_slide').animate({right:'0px'}, 1000);
 });
 
 /* form validations
@@ -158,3 +153,8 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+// Carousel controls
+$('.carousel').carousel({
+  interval: 4000
+})
