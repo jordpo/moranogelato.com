@@ -10,7 +10,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
 
 		<!-- Stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/style.css?version=7">
+		<link rel="stylesheet" type="text/css" href="css/style.css?version=8">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- favicons -->
@@ -68,7 +68,6 @@
 					<li><a id="about" href="#read">About</a></li>
 					<li><a id="loc" href="#read">Locations</a></li>
 					<li><a id="press" href="#read">Press</a></li>
-					<li><a id="contact" href="#read">Contact</a></li>
 				</ul>
 			</nav>
 			<a name="read"></a>
@@ -137,42 +136,6 @@
 					<a class="big_link" href="http://www.nhmagazine.com/October-2011/Morano-Gelato/" target='_blank'>NH Magazine 10/01/2011</a>
 					<a class="big_link" href="http://www.forbes.com/sites/larryolmsted/2011/07/05/the-best-gelato-in-america/" target='_blank'>Forbes 7/05/2011</a>
 				</article>
-				<div id="msg_art" class="row">
-					<article class="col-md-6">
-						<header>
-							<p>Interested in owning a Morano Gelato store? We're franchising!</p>
-							<h2>Contact us for additional information.</h2>
-							<p>Or for inquiries / gelato orders specific to Morano Gelato Hanover, please visit their <u><a href="http://www.moranogelatohanover.com/">website</a></u>.</p>
-						</header>
-						<p>Do you love Italy: the culture, history, and food? More importantly, do you love gelato?!</p>
-						<p>We’re looking for hard-working entrepreneurs who share our passion for Italy and gelato. If you are interested in supporting the tradition of true Italian gelato-making, love working with people, are community-oriented and are environmentally conscious, join Morano Gelato in our venture to bring our pure Italian gelato experience to communities throughout America, one cup at a time.</p>
-					</article>
-					<div class="col-md-6">
-					<br>
-						<form method="post">
-							<label for='first_name'>First Name</label><br>
-							<input class="single_input required" id='first_name' type='text' name='first_name'><br>
-							<span>This field is required.</span><br>
-							<label for='last_name'>Last Name</label><br>
-							<input class="single_input required" id='last_name' type='text' name='last_name'><br>
-							<span>This field is required.</span><br>
-							<label for='location'>Location</label><br>
-							<input class="single_input required" id='location' type='text' name='location' placeholder='City, State'><br>
-							<span>This field is required.</span><br>
-							<label for='email'>Email</label><br>
-							<input class="single_input required" id='email' type='email' name='email'><br>
-							<span>This field is required.</span><br>
-							<label for='formtext'>Message</label><br>
-							<textarea id='formtext' class="required" name='message' maxlength="500"></textarea><br>
-							<span>This field is required.</span><br>
-							<div id="formtext-error"></div>
-							<input type="checkbox" name="subscribe" id="subscribe">
-							<label for="subscribe">Subscribe to our monthly newsletter</label><br>
-							<div>to be in the know on the latest Morano Gelato news!</div><br>
-							<input type='submit'>
-						</form>
-					</div>
-				</div>
 			</section>
 			<footer>
 				<p>&copy; <?php echo date('Y');?> Morano Gelato Inc.</p>
@@ -182,7 +145,7 @@
 					<a href="https://twitter.com/MoranoGelato">Twitter</a>
 					<a href="http://instagram.com/">Instagram</a> <!-- need to fix this link-->
 				</nav>
-				<p><a id="self-credit" href="http://jordanmorano.biz">A Jordan Paul Morano Design Project</a></p>
+				<p><a id="self-credit" href="http://jordanmorano.biz">Web Development By</a></p>
 			</footer>
 		</div>
 
@@ -190,7 +153,6 @@
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<script src="js/bootstrap-carousel.js"></script>
 
-		<script type="text/javascript" src="js/validEmail.js"></script>
-		<script type="text/javascript" src="js/script.js?version=6"></script>
+		<script type="text/javascript" src="js/script.js?version=7"></script>
 	</body>
 </html>

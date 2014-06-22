@@ -10,11 +10,6 @@ $('#press').on('click', function(e){
     $('.about_art, #main, #msg_art, #locations').css('display','none');
 });
 
-$('#contact').on('click', function(e){
-    $('#msg_art').css('display','block');
-    $('.about_art, #news, #main, #locations').css('display','none');
-});
-
 $('#loc').on('click', function(e){
     $('#locations').css('display','block');
     $('.about_art, #news, #main, #msg_art').css('display','none');
@@ -28,96 +23,6 @@ $('#top_img').on('click', function(e){
     $('.about_art, #news, #msg_art').css('display','none');
 });
 
-/* form validations
--------------------------------------------------------------- */
-
-$('#formtext').keyup(function(){
-
-    // with every keyup the value of the text field is captured
-    // other keyboard listeners - keydown, keypress
-    // keydown fires before the new letter is captured
-
-    var value = $(this).val();
-
-    var how_many_characters = value.length;
-
-    var how_many_left = 500 - how_many_characters;
-
-    $('#formtext-error').html('You have ' + how_many_left + ' characters left.')
-
-    if (how_many_left == 0) {
-        $('#formtext-error').css('color','red');
-    } else if (how_many_left < 50) {
-        $('#formtext-error').css('color','orange');
-    } else {
-        $('#formtext-error').css('color','#FFF');
-    }
-
-});
-
-var $submit = $("input[type='submit']");
-var $required = $('.required');
-
-/* validation functions
---------------------------------------------- */
-function containsBlanks(){
-    var blanks = $required.map(function(){ return $(this).val() == ''; });
-    return $.inArray(true, blanks) != -1;
-}
-
-function requiredFilledIn(){
-    if (containsBlanks() || !$('#email').validEmail()) {
-        $submit.attr('disabled', 'disabled');
-    } else {
-        $submit.removeAttr('disabled');
-    }
-}
-
-/* validation functions end
---------------------------------------------- */
-$('form span').hide();
-
-$('input, textarea').on('focus', function(){
-    $(this).next().next().fadeIn('slow');
-}).on('blur', function(){
-    $(this).next().next().fadeOut('slow');
-}).on('keyup', function(){
-    // check all required fields
-    requiredFilledIn();
-});
-
-$("#email").validEmail({on:'keyup',
-    success: function(){
-        $(this).next().next().removeClass('error').addClass('valid');
-    }, failure: function(){
-        $(this).next().next().removeClass('valid').addClass('error');
-    }});
-
-requiredFilledIn();
-
-/* form submit via Ajax
-------------------------------------------- */
-
-$('form').on('submit',function(event) {
-    event.preventDefault();
-    $.ajax({
-        url: "content/form.php",            // form processing will happen here
-        type: "post",
-        data: $('form').serialize(),
-        success: function(response){
-            $("#content").html(response);
-        },
-        failure:function(){
-            $('form').remove();
-            $("#msg_art").html('<article><p>There was an error. Please try again.</p></article>');
-        }
-    });
-    // scroll back up
-    $("html, body").animate({
-        scrollTop: 0
-    }, 0);
-});
-
 
 // Google Maps for Locations
 function initialize() {
@@ -125,7 +30,7 @@ function initialize() {
   var mapOptions = {
     zoom: 10,
     center: myLatlng
-  }
+  };
     var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     var image = 'img/mg_map.jpg';
     var marker = new google.maps.Marker({
@@ -138,7 +43,7 @@ function initialize() {
     var contentString = '<article class="map_info">' +
         '<a target="_blank" href="http://www.moranogelatohanover.com/"><img src="img/mg_hanover.jpg" alt="Morano Gelato Hanover"/><br />Morano Gelato Hanover</a>' +
         '<p>57 S Main St #101, Hanover, NH 03755 </p>' +
-    '</article>'
+    '</article>';
     var infowindow = new google.maps.InfoWindow({
       content: contentString
     });
@@ -157,4 +62,4 @@ google.maps.event.addDomListener(window, 'load', initialize);
 // Carousel controls
 $('.carousel').carousel({
   interval: 4000
-})
+});

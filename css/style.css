@@ -179,66 +179,6 @@ footer nav {
 	padding-bottom: 0;
 }
 
-/* form styling */
-
-.single_input {
-	width: 80%;
-	color: #000;
-}
-
-textarea {
-	width: 80%;
-	height: 100px;
-	color: #000;
-}
-
-input, textarea {
-	font-family: 'Roboto Slab', serif;
-	font-size: 14px;
-	margin: 10px 0;
-	border: 5px solid #FFF;
-	padding: 5px;
-	transition: border 1s ease-in-out;
-}
-
-input:focus, textarea:focus {
-	outline: 0;
-	border: 5px solid #FFD700;
-}
-
-input[type="checkbox"] {
-	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-ms-transform: scale(1.5);
-	-o-transform: scale(1.5);
-	transform: scale(1.5);
-	margin-right: 10px
-}
-
-input[type="submit"] {
-	width: 80%;
-	color: #000;
-	font-size: 18px;
-	background-color: #FFF;
-	font-family: 'Roboto Slab', serif;
-}
-
-input[type="submit"]:hover {
-	border: 5px solid #FFD700;
-}
-
-#form_success {
-	font-size: 1.2em;
-}
-
-.error, form span {
-	color: red;
-}
-
-.valid {
-	color: green;
-}
-
 /* Locations Map Canvas*/
 #map-canvas {
 	width: 90%;
