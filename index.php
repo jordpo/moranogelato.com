@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 
 		<title>Morano Gelato - Pure Italian Gelato</title>
-
+		<meta name="description" content="We're dedicated to the art of traditional gelato-making. We make each batch fresh every morning and aim to sell out every evening- this ensures the highest quality of gelato for our customers. We also make different, Italian-inspired flavors each day and seasonal flavors. Follow us on Facebook or Twitter for our daily flavors.">
+		
 		<!-- 3rd party Stylesheets -->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
