@@ -2,17 +2,22 @@
 
 $('#about').on('click', function(e){
     $('.about_art').css('display','block');
-    $('#main, #news, #msg_art, #locations').css('display','none');
+    $('#main, #news, #msg_art, #locations, #gelato').css('display','none');
+});
+
+$('#gelato-show').on('click', function(e){
+    $('#gelato').css('display','block');
+    $('.about_art, #main, #msg_art, #locations, #news').css('display','none');
 });
 
 $('#press').on('click', function(e){
     $('#news').css('display','block');
-    $('.about_art, #main, #msg_art, #locations').css('display','none');
+    $('.about_art, #main, #msg_art, #locations, #gelato').css('display','none');
 });
 
 $('#loc').on('click', function(e){
     $('#locations').css('display','block');
-    $('.about_art, #news, #main, #msg_art').css('display','none');
+    $('.about_art, #news, #main, #msg_art, #gelato').css('display','none');
     // resize google map
     initialize();
 });
@@ -20,7 +25,7 @@ $('#loc').on('click', function(e){
 // return the original content when main img is clicked
 $('#top_img').on('click', function(e){
     $('#main').css('display','block');
-    $('.about_art, #news, #msg_art').css('display','none');
+    $('.about_art, #news, #msg_art, #gelato').css('display','none');
 });
 
 

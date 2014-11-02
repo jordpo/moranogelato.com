@@ -46,6 +46,11 @@ header {
 	font-size: 2em;
 }
 
+.gelato-sub-header {
+	font-style: italic;
+	margin: 30px 0;
+}
+
 /* navigation styling */
 nav li {
 	display: inline-block;
@@ -93,7 +98,7 @@ a:hover {
 
 /* initial content div display*/
 
-.about_art, #news, #msg_art, #locations {
+.about_art, #news, #msg_art, #locations, #gelato {
 	display: none;
 }
 

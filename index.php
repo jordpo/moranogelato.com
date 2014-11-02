@@ -11,7 +11,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
 
 		<!-- Stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/style.css?version=8">
+		<link rel="stylesheet" type="text/css" href="css/style.css?version=9">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- favicons -->
@@ -67,6 +67,7 @@
 			<nav id="top_nav">
 				<ul>
 					<li><a id="about" href="#read">About</a></li>
+					<li><a id="gelato-show" href="#read">What is gelato</a></li>
 					<li><a id="loc" href="#read">Locations</a></li>
 					<li><a id="press" href="#read">Press</a></li>
 				</ul>
@@ -88,13 +89,13 @@
 
 						<p>Morano Gelato was established in 2010 by Morgan Morano after spending 6 years living on and off in Italy. Morgan grew up in the Upper Valley and always planned to open a dessert-related business. During college and after culinary school, Morgan gained experience working and cooking in New York City and Italy, the most significant being her work for a Sicilian Gelato Chef who quickly became a close friend and mentor. Morgan appreciated the bold flavors of gelato found in Italy and noticed the lack of authentic gelato shops with Italian flavors in America. Disappointed with products claiming to be 'gelato,' she set out to establish the tradition of gelato-making in America and recreate pure Italian gelato.</p>
 
-						<p>In May 2010 Morgan, with the financial help of her brother Jordan, purchased her first gelato machine, built and shipped from Northern Italy. She premiered the gelato at the Hanover Farmer&#39s Market in June 2010. Shortly after, during the first week of July, she moved the business to the back of Rosey Jekes Cafe in Hanover, establishing her first retail outlet. Morgan continued to make the gelato from scratch on premise, offering 6-8 flavors each day.</p>
+						<p>In May 2010 Morgan, with the financial help of her brother Jordan, purchased her first gelato machine, built and shipped from Northern Italy. She premiered the gelato at the Hanover Farmer's Market in June 2010. Shortly after, during the first week of July, she moved the business to the back of Rosey Jekes Cafe in Hanover, establishing her first retail outlet. Morgan continued to make the gelato from scratch on premise, offering 6-8 flavors each day.</p>
 
 						<p>In March 2011 a space on Main Street in Hanover became available, right next to the Nugget Movie Theater. Morgan moved the business and opened her first gelato shop on Main Street. Morano Gelato reopened in May 2011 in the new location with a larger menu, including Italian espresso &amp; hot chocolate, along with a full gelato display case of 13 flavors made on premise each morning.</p>
 
 						<p>In June 2012, Morano Gelato expanded into a neighboring space, offering a larger seating area and selection of gelato (16 flavors daily).</p>
 
-						<p>In September 2013, Morgan sold the Morano Gelato-Hanover shop to Bill & Pam Miles and John & Jenn Langhus, in hopes of expanding the gelato and brand. Through a franchise system, Morgan will continue to promote true Italian gelato - making it in small batches made on-site daily in each location, just as it is done in Hanover and throughout Italy.</p>
+						<p>In September 2013, Morgan sold the Morano Gelato-Hanover shop to Bill &amp; Pam Miles and John &amp; Jenn Langhus, in hopes of expanding the gelato and brand. Through a company expansion, Morgan will continue to promote true Italian gelato, making it in small batches made on-site daily in each location, just as it is done in Hanover and throughout Italy.</p>
 					</article>
 					<article class="about_art col-md-6">
 						<header>
@@ -104,6 +105,19 @@
 						<p>Supporting the local agriculture and economy is important to us. We work with farms and businesses in the community to source important ingredients for our gelato and sorbet and inspire community-specific flavors, such as maple in Hanover, New Hampshire at our flagship store. Even still, many of our ingredients come from Italy in our on-going commitment to making traditional and unique Italian flavors.</p>
 						<p> We take pride in our high standards and traditionalism during a time period where most gelato shops in this country are choosing to make familiar American flavors or looking to be edgy without fully understanding the science behind gelato-making.
 						We’re devoted to improving our gelato and will continue to introduce new flavors based on those found in Italy or inspired by a community we’re in, but, our dedication to tradition will ultimately distinguish us among other gelato shops in America. We’ve chosen to set our own path and return to a lost art, combining traditional and modern production methods to make and continue to strive for exceptional Pure Italian Gelato.</p>
+					</article>
+					<article id='gelato'>
+						<header>
+							<h2>What is gelato?</h2>
+						</header>
+						<p>Gelato is Italian ice cream and is derived from the Latin word for ‘frozen.’</p>
+						<p>It is a dense, smooth, creamy, and flavorful frozen product that has 3 main differences from American ice cream.</p>
+						<h4 class='gelato-sub-header'>Gelato is much lower in butterfat than American ice cream</h4>
+						<p>Most American ice cream has a butterfat content of 14-25%, while gelato fat content generally ranges from 4-9%. Less butterfat enables consumers to perceive the  gelato flavors better, making gelato a much tastier product.</p>
+						<h4 class='gelato-sub-header'>Gelato is denser than American ice cream</h4>
+						<p>American ice cream can have up to 50% or more air churned into it, compared to 20-30% in gelato. Air can double the amount of ice cream produced in a single batch, lowering the quality. The density in gelato not only creates a smoother and richer product, but ensures high quality in each batch produced. However, despite its density, gelato's low butterfat content maintains its lightness, creating the perfect combination of creamy but light.</p>
+						<h4 class='gelato-sub-header'>Gelato is served at a warmer temperature than American ice cream</h4>
+						<p>Gelato is usually served at a temperature 10-15 degrees warmer than American ice cream. The warmer temperature reinforces the creamy texture of the gelato and the bold flavors, as they more quickly melt in your mouth.</p>
 					</article>
 				</div>
 				<div id="locations" class="row">
@@ -154,6 +168,6 @@
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<script src="js/bootstrap-carousel.js"></script>
 
-		<script type="text/javascript" src="js/script.js?version=7"></script>
+		<script type="text/javascript" src="js/script.js?version=8"></script>
 	</body>
 </html>
