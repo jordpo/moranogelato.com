@@ -19,7 +19,7 @@ $('#loc').on('click', function(e){
     $('#locations').css('display','block');
     $('.about_art, #news, #main, #msg_art, #gelato').css('display','none');
     // resize google map
-    initialize();
+    generateMap();
 });
 
 // return the original content when main img is clicked
@@ -28,41 +28,47 @@ $('#top_img').on('click', function(e){
     $('.about_art, #news, #msg_art, #gelato').css('display','none');
 });
 
+$('#mg-chestnut').on('click', function() {
+  generateMap(/* use defaults */);
+  return false;
+});
 
-// Google Maps for Locations
-function initialize() {
-  var myLatlng = new google.maps.LatLng(43.700677, -72.289526);
+$('#mg-hanover').on('click', function() {
+  generateMap(43.700677, -72.289526, 'Morano Gelato Hanover', 'http://www.moranogelatohanover.com/');
+  return false;
+});
+
+function generateMap(latitude, longitude, title, link) {
+  // set defaults
+  latitude = latitude ? latitude : 42.321011;
+  longitude = longitude ? longitude : -71.176000;
+  title = title ? title : 'Morano Gelato';
+  link = link ? link : 'https://www.facebook.com/mgchestnuthill?fref=ts';
+
+  var myLatlng = new google.maps.LatLng(latitude, longitude);
   var mapOptions = {
-    zoom: 10,
+    zoom: 15,
     center: myLatlng
   };
-    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    var image = 'img/mg_map.jpg';
-    var marker = new google.maps.Marker({
-        position: myLatlng,
-        map: map,
-        title: 'Morano Gelato Hanover',
-        icon: image
-    });
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  var image = 'img/mg_map.jpg';
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: title,
+    icon: image
+  });
 
-    var contentString = '<article class="map_info">' +
-        '<a target="_blank" href="http://www.moranogelatohanover.com/"><img src="img/mg_hanover.jpg" alt="Morano Gelato Hanover"/><br />Morano Gelato Hanover</a>' +
-        '<p>57 S Main St #101, Hanover, NH 03755 </p>' +
-    '</article>';
-    var infowindow = new google.maps.InfoWindow({
-      content: contentString
-    });
+  google.maps.event.addListener(marker, 'click', function() {
+    window.open(link);
+  });
 
-    google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map,marker);
-    });
-
-    google.maps.event.trigger(map, 'resize');
-    var position = map.getCenter();
-    map.setCenter(position);
+  google.maps.event.trigger(map, 'resize');
+  var position = map.getCenter();
+  map.setCenter(position);
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', generateMap);
 
 // Carousel controls
 $('.carousel').carousel({

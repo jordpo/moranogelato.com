@@ -64,6 +64,7 @@ li {
 a {
 	color: #FFF;
 	margin: 10px;
+	margin-left: 0;
 	text-decoration: none;
 	transition: color .5s ease-in-out;
 }
@@ -217,4 +218,8 @@ footer nav {
 	  #top nav ul li{
 	  	display: block;
 	  }
+	}
+
+	.sub-header-text {
+		font-size: 14px;
 	}

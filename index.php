@@ -11,7 +11,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
 
 		<!-- Stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/style.css?version=9">
+		<link rel="stylesheet" type="text/css" href="css/style.css?version=10">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- favicons -->
@@ -85,7 +85,7 @@
 						<header>
 							<h2>About</h2>
 						</header>
-						<p>Morano Gelato is a small New Hampshire-based company dedicated to promoting the art of gelato-making through its production of authentic Italian gelato in small, concentrated batches.</p>
+						<p>Morano Gelato is a small New England-based company dedicated to promoting the art of gelato-making through its production of authentic Italian gelato in small, concentrated batches.</p>
 
 						<p>Morano Gelato was established in 2010 by Morgan Morano after spending 6 years living on and off in Italy. Morgan grew up in the Upper Valley and always planned to open a dessert-related business. During college and after culinary school, Morgan gained experience working and cooking in New York City and Italy, the most significant being her work for a Sicilian Gelato Chef who quickly became a close friend and mentor. Morgan appreciated the bold flavors of gelato found in Italy and noticed the lack of authentic gelato shops with Italian flavors in America. Disappointed with products claiming to be 'gelato,' she set out to establish the tradition of gelato-making in America and recreate pure Italian gelato.</p>
 
@@ -127,7 +127,25 @@
 						</header>
 						<ul>
 							<li>
-								Morano Gelato Hanover
+								<h3><a href='#' alt='map link' id='mg-chestnut'>
+									Morano Gelato <span class='sub-header-text'>(company-owned)</span>
+								</a></h3>
+								<p>
+									Mall at Chestnut Hill, 199 Bolyston Street<br>
+									Chestnut Hill, MA 02467<br>
+									Owners: Morgan Morano<br>
+									<a href='https://www.facebook.com/mgchestnuthill?fref=ts' alt='mg fb' target='_blank'>
+										Facebook
+									</a>
+									<a href='https://twitter.com/MGChestnutHill' alt='mg twitter' target='_blank'>
+										Twitter
+									</a>
+								</p>
+							</li>
+							<li>
+								<h3><a href='#' alt='map link' id='mg-hanover'>
+									Morano Gelato Hanover <span class='sub-header-text'>(licensed outlet)</span>
+								</a></h3>
 								<p>
 									57 South Main Street, Suite 101 <br>
 									Hanover, New Hampshire 03755 <br>
@@ -168,6 +186,6 @@
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<script src="js/bootstrap-carousel.js"></script>
 
-		<script type="text/javascript" src="js/script.js?version=8"></script>
+		<script type="text/javascript" src="js/script.js?version=9"></script>
 	</body>
 </html>
